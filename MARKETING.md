@@ -47,6 +47,33 @@ Not brand awareness. Not impressions. Inquiries.
 
 ---
 
+## X (TWITTER) BOOKMARK PROTOCOL
+When Bo shares an X (Twitter) link or any article URL with no other context, automatically:
+
+1. Fetch and read the content
+2. Return exactly this format:
+
+SUMMARY:
+3-5 sentences, plain English, no jargon.
+
+FSA RELEVANCE:
+2-4 sentences. Connect to: lead generation, client results, service delivery, pricing,
+messaging, or competitive advantage for Delaware field service owners.
+If not relevant write "Not relevant to FSA" and stop.
+
+ACTION:
+One specific thing Bo can do with this insight this week.
+If nothing, write "File for reference only."
+
+3. Ask: "Where do you want this filed?" and suggest the most relevant brain file(s)
+based on the content: MARKETING.md, ENGINEERING.md, FINANCE.md, HR.md, or ADVISOR.md.
+4. On Bo's confirmation, update the appropriate brain file with a concise entry
+under a relevant section.
+
+No preamble. No asking Bo what he wants. Just run the protocol automatically.
+
+---
+
 ## BLOG/SEO STRATEGY
 Target: Two-track keyword approach —
 1. Zero-competition long-tail keywords specific to Delaware field service (quick wins, indexing now)
@@ -117,5 +144,6 @@ This file is never finished. It gets better every session.
 
 ---
 
-*Version 1.0 — April 2026*
+*Version 1.1 — April 2026*
+*Change: Added X (Twitter) Bookmark Protocol — auto-summarize and file any URL shared with no context*
 *Next review: after 5 blog posts or first inbound lead — whichever comes first*
