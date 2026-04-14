@@ -15,8 +15,9 @@ Every task is a single Claude Code prompt, paste-ready, push to master.
 
 | Layer | Tool | Detail |
 |-------|------|--------|
-| Website | firststateautomation.ai | GitHub → Netlify auto-deploy |
+| Website | firststateautomation.ai | GitHub → Cloudflare Pages auto-deploy |
 | Repo | firststateautomation-ops/fsa-website | Push to master = live |
+| Hosting | Cloudflare Pages | Auto-deploys from GitHub master |
 | DNS/Proxy | Cloudflare Worker | Protects Anthropic API key |
 | Forms | Tally | Webhooks to email |
 | Automation | Make.com | Webhook-ready, no active scenarios yet |
@@ -55,7 +56,7 @@ Push directly to master when complete.
 |-------|-------|-----|
 | Silent JS failure | Unescaped apostrophe in inline string | Escape as `\'` or use template literal |
 | Chatbot not responding | Cloudflare Worker down or API key expired | Check Worker logs in Cloudflare dashboard |
-| Site not updating after push | Netlify build failed | Check Netlify deploy log |
+| Site not updating after push | Cloudflare Pages build failed | Check Cloudflare Pages dashboard deploy log |
 | Form submissions not arriving | Tally webhook misconfigured | Test webhook in Tally dashboard |
 
 ---
@@ -63,7 +64,7 @@ Push directly to master when complete.
 ## DEPLOYMENT CHECKLIST
 Before calling any task done:
 - [ ] Change pushed to master
-- [ ] Netlify build shows green
+- [ ] Cloudflare Pages build shows green
 - [ ] Change visible on firststateautomation.ai
 - [ ] No console errors on the affected page
 - [ ] Mobile view not broken
@@ -77,10 +78,13 @@ Before calling any task done:
 | Website (core pages) | Live |
 | Chatbot | Live — Cloudflare Worker proxying API |
 | Blog posts 1–3 | Live, indexed in Search Console |
-| Blog posts 4–7 | Deployed, not yet submitted to Search Console |
+| Blog posts 4–7 | Not yet built |
 | Cost-of-inaction stats bar | Queued — not yet deployed |
 | Strategy call CTA language | Queued — not yet deployed |
 | Google Business Profile | Live and approved |
+| Hamburger menu | Live — deployed via Cloudflare Pages migration |
+| Scroll to top button | Live — deployed via Cloudflare Pages migration |
+| Google Maps embed | Live — deployed via Cloudflare Pages migration |
 
 ---
 
@@ -99,5 +103,6 @@ After every engineering session:
 
 ---
 
-*Version 1.0 — April 2026*
+*Version 1.1 — April 2026*
+*Change note: Migrated hosting from Netlify to Cloudflare Pages*
 *Next review: after 3 engineering sessions*
